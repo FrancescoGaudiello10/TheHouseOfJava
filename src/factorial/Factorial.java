@@ -10,12 +10,13 @@ public class Factorial {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Inserisci il numero: ");
-		int n = sc.nextInt(); 
-		
-		int fattoriale = fact(n);
-		System.out.println("Il fattoriale del numero inserito è: " + fattoriale);
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.print("Inserisci il numero: ");
+			int n = sc.nextInt(); 
+			
+			int fattoriale = fact(n);
+			System.out.println("Il fattoriale del numero inserito è: " + fattoriale);
+		}
 	}
 	
 	
