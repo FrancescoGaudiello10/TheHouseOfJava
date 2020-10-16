@@ -10,7 +10,7 @@ import java.util.Scanner;
  * Radice Quadrata
 
 */
-public class Main {
+public class Calculator {
 
 	public static void main(String[] args) {
 		
