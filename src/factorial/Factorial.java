@@ -21,8 +21,13 @@ public class Factorial {
 	
 	//Creo una funzione che mi calcola il fattoriale.
 	private static int fact(int n) {
-		int output; 
-		if(n == 1) {
+		int output;
+		if(n < 1) {
+			System.out.println("Hai inserito un numero minore di 1, non funziona.");
+			return -1;
+		}
+		
+		else if(n == 1) {
 			return 1; 
 		}
 		else {
