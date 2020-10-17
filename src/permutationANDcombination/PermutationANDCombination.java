@@ -24,13 +24,13 @@ public class PermutationANDCombination {
 		// TODO Auto-generated method stub
 		int n,r;
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Inserisci il valore di n: ");
-		n = sc.nextInt(); 
-		
-		System.out.print("Inserisci il valore di r: ");
-		r = sc.nextInt(); 
-		
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.print("Inserisci il valore di n: ");
+			n = sc.nextInt(); 
+			
+			System.out.print("Inserisci il valore di r: ");
+			r = sc.nextInt();
+		}
 		System.out.println("Combinazione P(n,r) = " + (fact(n)/(fact(n-r)*fact(r))));
 		System.out.println("Permutazione P(n,r) = " + (fact(n) / (fact(n-r))));
 		
